@@ -10,6 +10,7 @@ import ProcessSteps from "./components/ProcessSteps";
 import WhyUsAndDocuments from "./components/WhyUsAndDocuments";
 import Reviews from "./components/Reviews";
 import InTheNews from "./components/InTheNews";
+import Gallery from "./components/Gallery";
 import FAQ from "./components/FAQ";
 import AppPromo from "./components/AppPromo";
 import FinalCTA from "./components/FinalCTA";
@@ -35,6 +36,7 @@ export default function App() {
       {/* <WhyUs /> */}
       <DocumentsRequired />
       <InTheNews />
+        <Gallery />
       <FAQ />
       <AppPromo />
       <FinalCTA />

@@ -204,7 +204,7 @@ import {
 } from "lucide-react";
 
 // Director's photo: src/assets/director.png
-import directorImg from "../assets/director.png";
+import directorImg from "../assets/director1.jpeg";
 
 /* CTA kahan jaye: Hero wale form ki id */
 const CTA_HREF = "#lead-form";
