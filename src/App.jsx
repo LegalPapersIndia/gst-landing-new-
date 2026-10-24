@@ -16,14 +16,14 @@ import AppPromo from "./components/AppPromo";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import StickyMobileCTA from "./components/StickyMobileCTA";
-import WhatsAppButton from "./components/WhatsAppButton";
+// import WhatsAppButton from "./components/WhatsAppButton";
 // import WhyUs from "./components/WhyUs";
 import DocumentsRequired from "./components/DocumentsRequired";
 import DirectorMessage from "./components/DirectorMessage";
 
 export default function App() {
   return (
-    <div id="top-form">
+    <div>
       <Navbar />
       <Hero />
       <DirectorMessage />
@@ -42,7 +42,7 @@ export default function App() {
       <FinalCTA />
       <Footer />
       <StickyMobileCTA />
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
       <div className="h-16 lg:hidden" />
     </div>
   );

@@ -1,356 +1,3 @@
-
-
-// // import { motion } from "framer-motion";
-
-// // const reviewImages = [
-// //   {
-// //     href: "https://share.google/1MYy6yASxWRMA1ZPa",
-// //     src: "https://www.legalpapersindia.com/assets/images/category/google-reviews-section-xvr.webp",
-// //     alt: "Google Reviews",
-// //   },
-// //   {
-// //     href: "https://www.trustpilot.com/review/legalpapersindia.com",
-// //     src: "https://www.legalpapersindia.com/assets/images/category/google-reviews-section-kab.webp",
-// //     alt: "Trustpilot Reviews",
-// //   },
-// //   {
-// //     href: "https://www.ambitionbox.com/reviews/legal-papers-india-reviews",
-// //     src: "https://www.legalpapersindia.com/assets/images/category/google-reviews-section-cvq.webp",
-// //     alt: "AmbitionBox Reviews",
-// //   },
-// // ];
-
-// // export default function Reviews() {
-// //   return (
-// //     <section id="reviews" className="bg-white">
-// //       <div className="mx-auto max-w-6xl px-5 py-20">
-// //         <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-black sm:text-4xl">
-// //           Ratings from clients
-// //         </h2>
-
-// //         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-// //           {reviewImages.map((r, i) => (
-// //             <motion.div
-// //               key={r.href}
-// //               initial={{ opacity: 0, y: 16 }}
-// //               whileInView={{ opacity: 1, y: 0 }}
-// //               viewport={{ once: true }}
-// //               transition={{ duration: 0.45, delay: i * 0.1 }}
-// //             >
-// //               <a
-// //                 href={r.href}
-// //                 target="_blank"
-// //                 rel="noopener noreferrer"
-// //                 title={r.alt}
-// //                 className="
-// //                   block
-// //                   rounded-2xl
-// //                   bg-white
-// //                   p-3
-// //                   shadow-[0_8px_16px_-4px_rgba(10,20,40,0.12),0_20px_40px_-12px_rgba(10,20,40,0.28)]
-// //                   transition-all
-// //                   duration-300
-// //                   hover:-translate-y-2
-// //                   hover:shadow-[0_12px_20px_-4px_rgba(10,20,40,0.15),0_30px_55px_-12px_rgba(10,20,40,0.35)]
-// //                 "
-// //               >
-// //                 <img
-// //                   loading="lazy"
-// //                   src={r.src}
-// //                   alt={r.alt}
-// //                   title={r.alt}
-// //                   className="w-full rounded-xl object-contain"
-// //                 />
-// //               </a>
-// //             </motion.div>
-// //           ))}
-// //         </div>
-// //       </div>
-// //     </section>
-// //   );
-// // }
-
-
-// import { motion } from "framer-motion";
-
-// const reviewImages = [
-//   {
-//     href: "https://share.google/1MYy6yASxWRMA1ZPa",
-//     src: "https://www.legalpapersindia.com/assets/images/category/google-reviews-section-xvr.webp",
-//     alt: "Google Reviews",
-//   },
-//   {
-//     href: "https://www.trustpilot.com/review/legalpapersindia.com",
-//     src: "https://www.legalpapersindia.com/assets/images/category/google-reviews-section-kab.webp",
-//     alt: "Trustpilot Reviews",
-//   },
-//   {
-//     href: "https://www.ambitionbox.com/reviews/legal-papers-india-reviews",
-//     src: "https://www.legalpapersindia.com/assets/images/category/google-reviews-section-cvq.webp",
-//     alt: "AmbitionBox Reviews",
-//   },
-// ];
-
-// export default function Reviews() {
-//   return (
-//     <section id="reviews" className="bg-white">
-//       <div className="mx-auto max-w-[1400px] px-5 py-20 lg:px-8">
-//         <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-black sm:text-4xl">
-//           Ratings from clients
-//         </h2>
-
-//         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-//           {reviewImages.map((r, i) => (
-//             <motion.div
-//               key={r.href}
-//               initial={{ opacity: 0, y: 16 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               viewport={{ once: true }}
-//               transition={{ duration: 0.45, delay: i * 0.1 }}
-//             >
-//               <a
-//                 href={r.href}
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 title={r.alt}
-//                 className="
-//                   block
-//                   rounded-2xl
-//                   bg-white
-//                   p-3
-//                   shadow-[0_8px_16px_-4px_rgba(10,20,40,0.12),0_20px_40px_-12px_rgba(10,20,40,0.28)]
-//                   transition-all
-//                   duration-300
-//                   hover:-translate-y-2
-//                   hover:shadow-[0_12px_20px_-4px_rgba(10,20,40,0.15),0_30px_55px_-12px_rgba(10,20,40,0.35)]
-//                 "
-//               >
-//                 <img
-//                   loading="lazy"
-//                   src={r.src}
-//                   alt={r.alt}
-//                   title={r.alt}
-//                   className="w-full rounded-xl object-contain"
-//                 />
-//               </a>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
-// import { useEffect, useRef, useState } from "react";
-// import { motion, animate, useInView } from "framer-motion";
-// import { Star, Users } from "lucide-react";
-
-// import googleLogo from "../assets/G.png";
-// import trustpilotLogo from "../assets/T.png";
-// import mouthshutLogo from "../assets/M.png";
-
-// /* ------------------------------------------------------------------
-//    DATA: yahan se numbers change karo
-//    ------------------------------------------------------------------ */
-// const platforms = [
-//   {
-//     name: "Google Reviews",
-//     logo: googleLogo,
-//     logoClass: "h-12 sm:h-14",
-//     accent: "#4285F4",
-//     rating: 4.9,
-//     caption: "Google Review 4.9 out of 5",
-//     badge: "2,401 reviews",
-//   },
-//   {
-//     name: "Trustpilot Reviews",
-//     logo: trustpilotLogo,
-//     logoClass: "h-12 sm:h-14",
-//     accent: "#00b67a",
-//     rating: 4.7,
-//     caption: "Trustpilot Rating 4.7 out of 5",
-//     badge: "176 reviews",
-//   },
-//   {
-//     name: "MouthShut Reviews",
-//     logo: mouthshutLogo,
-//     logoClass: "h-14 sm:h-16", // logo mai padding zyada hai, isliye thoda bada
-//     accent: "#f26522",
-//     rating: 4,
-//     caption: "MouthShut Score 75%. Rated 4 out of 5 by MouthShut users",
-//     badge: "476 votes",
-//   },
-// ];
-
-// /* ------------------------------------------------------------------
-//    Helpers
-//    ------------------------------------------------------------------ */
-// function CountUp({ to, decimals = 1 }) {
-//   const ref = useRef(null);
-//   const inView = useInView(ref, { once: true });
-//   const [val, setVal] = useState(0);
-
-//   useEffect(() => {
-//     if (!inView) return;
-//     const controls = animate(0, to, {
-//       duration: 1.3,
-//       ease: "easeOut",
-//       onUpdate: (v) => setVal(v),
-//     });
-//     return () => controls.stop();
-//   }, [inView, to]);
-
-//   return <span ref={ref}>{val.toFixed(decimals)}</span>;
-// }
-
-// function Stars({ rating, accent }) {
-//   const pct = (rating / 5) * 100;
-
-//   const row = (className) => (
-//     <div className="flex gap-1">
-//       {[0, 1, 2, 3, 4].map((i) => (
-//         <Star key={i} className={`h-6 w-6 sm:h-7 sm:w-7 ${className}`} />
-//       ))}
-//     </div>
-//   );
-
-//   return (
-//     <div className="relative inline-block" aria-label={`${rating} out of 5 stars`}>
-//       {row("fill-slate-200 text-slate-200")}
-
-//       <motion.div
-//         className="absolute inset-0 overflow-hidden"
-//         initial={{ width: 0 }}
-//         whileInView={{ width: `${pct}%` }}
-//         viewport={{ once: true }}
-//         transition={{ duration: 1.2, ease: "easeOut", delay: 0.25 }}
-//       >
-//         <div className="w-max" style={{ color: accent }}>
-//           {row("fill-current text-current")}
-//         </div>
-//       </motion.div>
-//     </div>
-//   );
-// }
-
-// /* ------------------------------------------------------------------
-//    Single review card
-//    ------------------------------------------------------------------ */
-// function ReviewCard({ p, index }) {
-//   return (
-//     <motion.div
-//       initial={{ opacity: 0, y: 28 }}
-//       whileInView={{ opacity: 1, y: 0 }}
-//       viewport={{ once: true, margin: "-60px" }}
-//       transition={{ duration: 0.55, delay: index * 0.12, ease: "easeOut" }}
-//       className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-navy-900/10 bg-white p-6 shadow-[0_8px_24px_-8px_rgba(10,20,40,0.18)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_24px_50px_-12px_rgba(10,20,40,0.30)] sm:p-7"
-//     >
-//       {/* top accent bar */}
-//       <div
-//         className="absolute inset-x-0 top-0 h-1.5"
-//         style={{ backgroundColor: p.accent }}
-//       />
-
-//       {/* soft glow blob */}
-//       <div
-//         className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full opacity-10 blur-2xl transition-opacity duration-500 group-hover:opacity-25"
-//         style={{ backgroundColor: p.accent }}
-//       />
-
-//       {/* logo + name */}
-//       <div className="relative flex items-center gap-3">
-//         <img
-//           src={p.logo}
-//           alt={p.name}
-//           title={p.name}
-//           loading="lazy"
-//           className={`${p.logoClass} w-auto max-w-[130px] shrink-0 object-contain`}
-//         />
-//         <p className="font-display text-lg font-bold leading-tight text-black">
-//           {p.name}
-//         </p>
-//       </div>
-
-//       {/* rating */}
-//       <div className="relative mt-6">
-//         <div className="flex items-end gap-2">
-//           <span
-//             className="font-display text-6xl font-bold leading-none"
-//             style={{ color: p.accent }}
-//           >
-//             <CountUp to={p.rating} decimals={p.rating % 1 === 0 ? 0 : 1} />
-//           </span>
-//           <span className="pb-1 text-lg font-semibold text-slate-500">/ 5</span>
-//         </div>
-
-//         <div className="mt-3">
-//           <Stars rating={p.rating} accent={p.accent} />
-//         </div>
-//       </div>
-
-//       <p className="relative mt-4 text-sm leading-relaxed text-slate-700">
-//         {p.caption}
-//       </p>
-
-//       {/* badge (hamesha neeche) */}
-//       <div className="relative mt-auto pt-5">
-//         <div
-//           className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-semibold"
-//           style={{ backgroundColor: `${p.accent}14`, color: p.accent }}
-//         >
-//           <Users className="h-4 w-4" />
-//           {p.badge}
-//         </div>
-//       </div>
-//     </motion.div>
-//   );
-// }
-
-// /* ------------------------------------------------------------------
-//    Section
-//    ------------------------------------------------------------------ */
-// export default function Reviews() {
-//   return (
-//     <section id="reviews" className="relative overflow-hidden bg-white">
-//       <div className="pointer-events-none absolute inset-0">
-//         <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-gold-500/10 blur-3xl" />
-//         <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-navy-600/10 blur-3xl" />
-//       </div>
-
-//       <div className="relative mx-auto max-w-[1400px] px-5 py-16 sm:py-20 lg:px-8">
-//         <motion.div
-//           initial={{ opacity: 0, y: 16 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           viewport={{ once: true }}
-//           transition={{ duration: 0.5 }}
-//           className="mx-auto max-w-2xl text-center"
-//         >
-//           <span className="inline-block rounded-full bg-gold-500/15 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-gold-600">
-//             Client Reviews
-//           </span>
-
-//           <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-black sm:text-4xl">
-//             Ratings from clients
-//           </h2>
-
-//           <p className="mt-3 text-base leading-relaxed text-slate-700">
-//             Independent review platforms par hamare clients ki real ratings.
-//           </p>
-//         </motion.div>
-
-//         <div className="mt-10 grid grid-cols-1 items-stretch gap-6 sm:mt-12 md:grid-cols-3">
-//           {platforms.map((p, i) => (
-//             <ReviewCard key={p.name} p={p} index={i} />
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
 import { useEffect, useRef, useState } from "react";
 import { motion, animate, useInView } from "framer-motion";
 import { Star, Users, BadgeCheck, ShieldCheck } from "lucide-react";
@@ -361,6 +8,8 @@ import mouthshutLogo from "../assets/M.png";
 
 /* ------------------------------------------------------------------
    DATA: yahan se numbers change karo
+   ringFill (optional): ring kitni bhari dikhe (0 se 1).
+   Na likho toh ring asli rating (rating / 5) jitni bharegi.
    ------------------------------------------------------------------ */
 const platforms = [
   {
@@ -385,8 +34,9 @@ const platforms = [
     name: "MouthShut Reviews",
     logo: mouthshutLogo,
     logoClass: "h-11", // logo mai padding zyada hai, isliye thoda bada
-    accent: "#f26522",
+    accent: "#7c3aed",
     rating: 4,
+    ringFill: 0.92, // sirf MouthShut ki ring zyada bhari dikhane ke liye
     caption: "MouthShut Score 75%. Rated 4 out of 5 by MouthShut users",
     badge: "476 votes",
   },
@@ -395,7 +45,7 @@ const platforms = [
 const summary = [
   { value: "3,000+", label: "Verified reviews" },
   { value: "4.8", label: "Average rating" },
-  { value: "25K+", label: "GST certificates issued" },
+  { value: "100%", label: "Online process" },
 ];
 
 /* ------------------------------------------------------------------
@@ -420,12 +70,12 @@ function CountUp({ to, decimals = 1 }) {
 }
 
 /* Circular progress ring with the rating inside */
-function RatingRing({ rating, accent }) {
+function RatingRing({ rating, accent, fill }) {
   const size = 148;
   const stroke = 10;
   const r = (size - stroke) / 2;
   const C = 2 * Math.PI * r;
-  const pct = rating / 5;
+  const pct = fill ?? rating / 5;
 
   return (
     <div
@@ -562,7 +212,7 @@ function ReviewCard({ p, index }) {
 
       {/* body */}
       <div className="relative flex flex-1 flex-col items-center px-6 pb-6 pt-7 text-center">
-        <RatingRing rating={p.rating} accent={p.accent} />
+        <RatingRing rating={p.rating} accent={p.accent} fill={p.ringFill} />
 
         <div className="mt-5">
           <Stars rating={p.rating} accent={p.accent} />
